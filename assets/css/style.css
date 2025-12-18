@@ -488,14 +488,10 @@ button:hover {
 }
 
 .footer {
-    padding: 80px 0 30px;
-    background: var(--gray);
+    padding: 80px 30px;
+    background: rgb(20, 20, 20);
 }
 
-.footer {
-    padding: 80px 80px;
-    background-color: var(--gray);
-}
 
 .footer-content {
     max-width: var(--max-width);
@@ -681,4 +677,172 @@ figcaption {
     font-family: var(--font-family);
     font-weight: var(--font-regular);
     color: var(--light-gray);
+}
+
+@media (max-width: 992px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 48px;
+        align-items: center;
+    }
+
+    .footer-content-right {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        justify-content: center;
+        justify-self: center;
+        justify-items: center;
+        padding: 0 2rem;
+    }
+
+    .services-section .services-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }   
+
+    .marketing-section .cards {
+        max-width: var(--max-width);
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+    }
+
+    .work-companies-container {
+        max-width: var(--max-width);
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        justify-self: center;
+    }
+    
+    .how-to-design-section {
+        max-width: var(--max-width);
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        justify-self: center;
+    }
+
+    .pixelgrade-section {
+        justify-self: center;
+        padding-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+        align-items: center;
+        max-width: var(--max-width);
+    }   
+
+    .footer {
+        padding: 50px 0;
+    }
+
+    .footer-content {
+        gap: 40px;
+    }
+
+    .footer-content-right {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .footer-content-right-item-input {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    body {
+        justify-content: center;
+        justify-self: center;
+        justify-items: center;
+        padding: 0 2rem;
+    }
+
+    .services-section .services-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    } 
+
+    .pixelgrade-section {
+        justify-self: center;
+        padding-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+        align-items: center;
+        max-width: var(--max-width);
+    }  
+
+    .how-to-design-section {
+        max-width: var(--max-width);
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        justify-self: center;
+    }
+
+    .work-companies-container {
+        max-width: var(--max-width);
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        justify-self: center;
+    }   
+
+    .marketing-section .cards {
+        max-width: var(--max-width);
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+    }   
+
+    .footer {
+        padding: 40px 0;
+    }
+
+    .footer-content {
+        gap: 32px;
+        text-align: center;
+    }
+
+    .footer-content-left {
+        gap: 24px;
+    }
+
+    .footer-content-left-social {
+        gap: 12px;
+    }
+
+    .footer-content-left-social a {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+
+    .footer-content-right {
+        gap: 24px;
+    }
+
+    .footer-content-right-item {
+        gap: 16px;
+    }
+
+    .footer-content-right-item-input {
+        max-width: 100%;
+    }
 }

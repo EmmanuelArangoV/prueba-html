@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward');
+
+:root {
+    --green: #4CAF4F;
+    --silver: #F5F7FA;
+    --light-gray: #717171;
+    --gray: #4D4D4D;
+
+    --font-family: 'Inter', sans-serif;
+
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-extra-bold: 800;
+    --font-black: 900;
+
+    --max-width: 1200px;
+
+    --padding-y: 3rem;
+    --padding-x: 4rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0 auto;
+    padding: var(--padding-y) 0 0 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: var(--padding-x);
+}
+
+.navigation-menu ul li {
+    display: inline;
+    margin: 0.5rem
+}
+
+.navigation-menu ul li a {
+    text-decoration: none;
+    color: var(--dark);
+    font-family: var(--font-family), serif;
+    font-weight: var(--font-regular);
+}
+
+.nav-buttons {
+    grid-column: 3;
+    display: flex;
+    gap: 5px;
+}
+
+.home {
+    font-family: var(--font-family), serif;
+    font-weight: var(--font-bold);
+}
+
+.nav-buttons .sign-up-button{
+    font-family: var(--font-family), serif;
+    font-weight: var(--font-regular);
+    background-color: var(--green);
+    color: white;
+    border: 1px solid var(--dark);
+    padding: 0.7rem;
+    transition: 0.4s ease;
+    border-radius: 5px;
+}
+
+.nav-buttons .login-button{
+    font-family: var(--font-family), serif;
+    font-weight: var(--font-regular);
+    background-color: white;
+    color: var(--green);
+    border: 1px solid var(--dark);
+    padding: 0.7rem;
+    transition: 0.4s ease;
+    border-radius: 5px;
+}
+
+.hero-section {
+    justify-content: center;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: var(--padding-y);
+    margin-bottom: 8rem;
+    max-width: var(--max-width);
+}
+
+.hero-section h1 {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    font-weight: var(--font-bold);
+    margin-bottom: 1.5rem;
+    color: var(--gray);
+}
+
+.hero-section h1 span {
+    color: var(--green);
+}
+
+.hero-section p {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    font-weight: var(--font-regular);
+    color: var(--light-gray);
+}
+
+.hero-section img {
+    width: 391px;
+    height: auto;
+}
+
+.hero-button button {
+    background-color: var(--green);
+    padding: 1rem 2rem;
+    color: white;
+    font-family: var(--font-family), serif;
+    font-weight: var(--font-regular);
+    border-radius: 5px;
+    border: none;
+    transition: 0.4s ease;
+}
+
+.clients-section {
+    background-color: white;
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.clients-section .section-text {
+    margin-bottom: 2rem;
+}
+
+.clients-section .section-text h2{
+    justify-content: center;
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: var(--font-semibold);
+    color: var(--gray);
+}
+
+.clients-section .section-text p{
+    text-align: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: var(--font-regular);
+    color: var(--light-gray);
+}
+
+.clients-section .logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    justify-self: center;
+}
+
+.logos img {
+    width: 70%;
+    object-fit: contain;
+    filter: grayscale(100%);
+}
+
+.services-section {
+    max-width: var(--max-width);
+    justify-content: center;
+    justify-self: center;
+    margin-bottom: 2rem;
+}
+
+.services-section h2{
+    justify-content: center;
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: var(--font-semibold);
+    color: var(--gray);
+    margin-bottom: 10px;
+}
+
+.services-section p{
+    text-align: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: var(--font-regular);
+    color: var(--light-gray);
+    margin-bottom: 1rem;
+}
+
+.services-section .services-cards {
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: space-between;
+}
+
+.services-cards .card {
+    justify-items: center;
+    box-shadow: 4px 4px 4px rgba(0%, 0%, 0%, 0.05);
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.card {
+    justify-items: center;
+}
+
+.card img {
+    justify-self: center;
+    width: 70%;
+    height: auto;
+}
+
+.card .card-text h3{
+    justify-content: center;
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: var(--font-bold);
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+
+
+.pixelgrade-section {
+    justify-self: center;
+    padding-bottom: 5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1vw;
+    align-items: center;
+    max-width: var(--max-width);
+}
+
+.pixelgrade-section .illustration img {
+    width: 400px;
+    height: auto;
+}
+
+.pixelgrade-section .section-description h2 {
+    text-align: start;
+    font-family: var(--font-family);
+    font-weight: var(--font-semibold);
+    color: var(--gray);
+    margin-bottom: 10px;
+}
+
+.pixelgrade-section .section-description p {
+    padding-right: 3rem;
+    text-align: start;
+    font-family: var(--font-family);
+    font-weight: var(--font-regular);
+    color: var(--light-gray);
+    margin-bottom: 1rem;
+}
+
+.section-description .button-section button{
+    background-color: var(--green);
+    padding: 1rem 2rem;
+    color: white;
+    font-family: var(--font-family), serif;
+    font-weight: var(--font-regular);
+    border-radius: 5px;
+    border: none;
+    transition: 0.4s ease;
+}
+
+.statistics {
+    padding: 2rem 2rem;
+    background-color: var(--silver);
+    margin-bottom: 5rem;
+}
+
+.statistics-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1fr;
+    align-items: center;
+    justify-self: center;
+    max-width: var(--max-width);
+}
+
+.statistics-container .section-description h2 {
+    text-align: start;
+    font-family: var(--font-family);
+    font-weight: var(--font-semibold);
+    font-size: 2rem;
+    color: var(--gray);
+    margin-bottom: 10px;
+}
+
+.statistics-container .section-description h2 span {
+    color: var(--green);
+    margin-bottom: 10px;
+}
+
+.statistics-container .section-description p{
+    padding-right: 3rem;
+    text-align: start;
+    font-family: var(--font-family);
+    font-weight: var(--font-regular);
+    color: var(--light-gray);
+    margin-bottom: 1rem;
+}
+
+.statistics-container .numbers {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+    margin-left: 5rem;
+}
+
+.statistics-container .numbers .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.card h3{
+    text-align: start;
+    font-family: var(--font-family);
+    font-weight: var(--font-semibold);
+    font-size: 2rem;
+    color: var(--gray);
+}
+
+.card span {
+    text-align: start;
+    font-family: var(--font-family);
+    font-weight: var(--font-regular);
+    color: var(--light-gray);
+}
+
+.card div {
+    justify-content: end;
+}
+
+.card img {
+    width: 50%;
+    height: auto;
+    margin-right: 0;
+}
+
+.how-to-design-section {
+    max-width: var(--max-width);
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+}
+
+.how-to-design-section img {
+    width: 80%;
+    height: auto;
+}
+
+.how-to-design-section .section-description h2 {
+    text-align: start;
+    font-family: var(--font-family);
+    font-weight: var(--font-semibold);
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+.how-to-design-section .section-description p {
+    padding-right: 3rem;
+    text-align: start;
+    font-family: var(--font-family);
+    font-weight: var(--font-regular);
+    color: var(--light-gray);
+    margin-bottom: 2rem;
+}
+
+.how-to-design-section .button-section button{
+    background-color: var(--green);
+    padding: 1rem 2rem;
+    color: white;
+    font-family: var(--font-family), serif;
+    font-weight: var(--font-regular);
+    border-radius: 5px;
+    border: none;
+    transition: 0.4s ease;
+}
+
+.work-companies {
+    margin-top: 2rem;
+    background-color: var(--silver);
+    padding: 2rem 0;
+}
+
+.work-companies-container {
+    max-width: var(--max-width);
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: start;
+    justify-content: center;
+    justify-self: center;
+}
+
+.work-companies-container .picture {
+    justify-items: center;
+}
+
+.work-companies-container img {
+    width: 70%;
+    height: auto;
+}
+
+.work-companies .section-description h2 {
+    text-align: start;
+    font-family: var(--font-family);
+    font-weight: var(--font-semibold);
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+.work-companies .section-description p {
+    padding-right: 3rem;
+    text-align: start;
+    font-family: var(--font-family);
+    font-weight: var(--font-regular);
+    color: var(--light-gray);
+    margin-bottom: 2rem;
+}
+
+.work-companies-container .section-description .logos {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: space-between;
+    justify-self: center;
+}
+
+.work-companies-container .section-description .logos div {
+    display: inline-block;
+}
+
+
+.work-companies-container .section-description .logos img {
+    width: 50%;
+    object-fit: contain;
+}
+
+.work-companies-container h3 {
+    text-align: start;
+    font-family: var(--font-family);
+    font-weight: var(--font-semibold);
+    color: var(--green);
+    margin-bottom: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--gray);
+    color: white;
+    scale: 1.1;
+}
+
+.text-description {
+    margin: 2rem;
+}
+
+.link {
+    color: var(--green);
+}
+
+.footer {
+    padding: 80px 0 30px;
+    background: var(--gray);
+}
+
+.footer {
+    padding: 80px 80px;
+    background-color: var(--gray);
+}
+
+.footer-content {
+    max-width: var(--max-width);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.footer-content-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-content-left p {
+    color: var(--silver);
+}
+
+.footer-content-left-social {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-content img {
+    width: 50%;
+    height: auto;
+} 
+.footer-content-right {
+    display: flex;
+    gap: 90px;
+    justify-content: space-between;
+}
+
+.footer-content-right-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-content-right-item h4 {
+    color: white;
+}
+
+.footer-content-right-item ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-content-right-item ul li a {
+    text-decoration: none;
+    color: var(--silver);
+    transition: all 0.3s ease;
+}
+
+.footer-content-right-item ul li a:hover {
+    color: var(--green);
+}
+
+.footer-content-right-item-input {
+    display: flex;
+    align-items: center;
+    background-color: var(--light-gray);
+    border-radius: 4px;
+    padding: 8px 12px;
+    gap: 12px;
+    transition: all 0.3s ease;
+}
+
+.footer-content-right-item-input:focus-within {
+    outline: 2px solid var(--green);
+    outline-offset: 2px;
+}
+
+.footer-content-right-item-input input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 0;
+}
+
+.footer-content-right-item-input input::placeholder {
+    color: var(--silver);
+    opacity: 0.7;
+}
+
+.footer-content-right-item-input i {
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 4px;
+    flex-shrink: 0;
+}
+
+.footer-content-right-item-input i:hover {
+    color: var(--green);
+    transform: translateX(2px);
+}
+
+.subscription  {
+    background-color: var(--silver);
+    margin: 2rem 0 0 0;
+    justify-items: center;
+    padding: 2rem 0;
+}
+
+.subscription h2 {
+    text-align: start;
+    font-family: var(--font-family);
+    font-weight: var(--font-semibold);
+    font-size: 3rem;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+.subscription-button {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.subscription-button button {
+    justify-self: center;
+    background-color: var(--green);
+    padding: 1rem 2rem;
+    color: white;
+    font-family: var(--font-family), serif;
+    font-weight: var(--font-regular);
+    border-radius: 5px;
+    border: none;
+    transition: 0.4s ease;
+}
+
+.marketing-section  {
+    max-width: var(--max-width);
+    margin: 2rem 0 0 0;
+    justify-items: center;
+    justify-self: center;
+    padding: 2rem 0;
+}
+
+.marketing-section h2 {
+    text-align: start;
+    font-family: var(--font-family);
+    font-weight: var(--font-semibold);
+    font-size: 3rem;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+.marketing-section p {
+    padding-right: 3rem;
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: var(--font-regular);
+    color: var(--light-gray);
+    margin-bottom: 2rem;
+}
+
+.marketing-section .cards {
+    max-width: var(--max-width);
+    display: grid;
+    gap:2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+
+.marketing-section img {
+    width: 368px;
+    height: 286px;
+}
+
+figcaption {
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: var(--font-regular);
+    color: var(--light-gray);
+}

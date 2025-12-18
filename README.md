@@ -28,7 +28,7 @@
 
 ## Demo
 
-Check out the live demo: [Nexcent Landing Page](https://app.netlify.com/projects/inquisitive-cannoli-0664c5/overview)
+Check out the live demo: [Nexcent Landing Page](https://inquisitive-cannoli-0664c5.netlify.app/)
 
 ## Installation
 

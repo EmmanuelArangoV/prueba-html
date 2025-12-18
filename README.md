@@ -28,7 +28,7 @@
 
 ## Demo
 
-Check out the live demo: [Nexcent Landing Page](https://emmanuelarangov.github.io/drall-html-css/)
+Check out the live demo: [Nexcent Landing Page](https://app.netlify.com/projects/inquisitive-cannoli-0664c5/overview)
 
 ## Installation
 
